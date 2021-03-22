@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jervi</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/parallax.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <ul id="scene">
+            <li class="layer" data-depth="0.1">
+                <img src="./img/jervi.png">
+            </li>
+        </ul>
+        <div class="main">
+            <div class="header">
+                <span class="logo">
+                    <img src="./img/Logo.png" alt="">
+                </span>
+
+                <ul class="menu">
+                    <li class="item btn" id="m1" onclick="man(this.id)">Home</li>
+                    <li class="item btn">Home</li>
+                    <li class="item btn">Home</li>
+                    <li class="item cybr">
+                        <button class="cybr-btn">
+                            About_me<span aria-hidden>_</span>
+                            <span aria-hidden class="cybr-btn__glitch">About_me</span>
+                            <span aria-hidden class="cybr-btn__tag">J175</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                <div class="left">
+                    <h2>Yeee,</h2>
+                    <h2>I'm Jervi,</h2>
+                    <h2>web developper</h2>
+                    <h2>and video creator</h2>
+                </div>
+                <div class="right">
+                    <h2>Turn your ideas into,</h2>
+                    <h2>website or app ?</h2>
+                    <h2>you are</h2>
+                    <h2>in the right place</h2>
+                </div>
+            </div>
+            <div class="bus">
+                <marquee scrollamount="4">
+                    <div class="area">
+                        <img class="bus-img" src="./img/bus.svg" height="100%">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/Jervi-sir" target="_blanc">
+                                    <img class="github" src="./img/github.svg" alt="">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/gacem_humen/" target="_blanc">
+                                    <img class="instagram" src="./img/instagram.svg" alt="">
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCD-YOxxLv5yGhcerkZLGZgg" target="_blanc">
+                                    <img class="youtube" src="./img/youtube.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </marquee>
+            </div>
+            <div class="table">
+                <div class="left">
+                    My Skills
+                </div>
+                <div class="right">
+                    <marquee behavior="" direction="">
+                        <span>( Front and Back-end )</span>
+                        <span>Laravel</span>
+                        <span>Vue</span>
+                        <span>Node</span>
+                        <span>React</span>
+                        <span>JS</span>
+                        <span>PHP</span>
+                        <span>HTML/CSS/ES5</span>
+                        <span>Figma</span>
+                        <span>Arduino</span>
+                    </marquee>
+                </div>
+            </div>
+            <div class="table">
+                <div class="left">
+                    ...........
+                </div>
+                <div class="right">
+                    <span>M Jervi, and this is my message</span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <h6>me and ma hommy are CEO of </h6>
+                    <img src="./img/2KW.png" alt="">
+                </div>
+                <div class="contact-me">
+                    <button id="myBtn">Contact Me</button>
+                </div>
+                <div class="right">
+                    <h6>oh btw, </h6>
+                    <h6>this site isnt a joke </h6>
+                    <h6>but just a quick thing </h6>
+                    <h6>so i can put it online u know</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&nbsp;</span>
+                <div class="image">
+                    <h6>So you are interested</h6>
+                    <img src="./img/jervimoto.png" width="100%">
+                </div>
+            </div>
+            <div class="modal-body">
+                <form action="action_page.php">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <input type="email" id="lname" name="lastname" placeholder="Your email..">
+
+                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                    <div class="check-box-group">
+                        <label class="custom-checkbox" tab-index="0" aria-label="Checkbox Label">
+                          <input type="checkbox" >
+                          <span class="checkmark"></span>
+                          <span class="label">Simple Project</span>
+                        </label>
+
+                        <label class="custom-checkbox" tab-index="0" aria-label="Another Label">
+                          <span class="label">Serious Project</span>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="modal-footer">
+
+                <h6>
+                    btw, I would like to add that m looking for serious project, ofc this site isnt that fancy and responsive.
+                </h6>
+                <h6>but i made better</h6>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        function man(id) {
+            var obj = document.getElementById(id).innerHTML;
+            if (obj == "Home") {
+                document.getElementById(id).innerHTML = "U already in";
+            } else {
+                document.getElementById(id).innerHTML = "Home";
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
+
+<!--
+
+    <div class="check-row">
+                        <div class="item">
+                            <div class="checkbox">
+                                <input type="checkbox">
+                                <label></label>
+                            </div>
+                            <span class="checkmark">Simple Project</span>
+                        </div>
+                        <div class="item">
+
+                            <span class="checkmark">Serious Project</span>
+                            <div class="checkbox">
+                                <input type="checkbox">
+                                <label></label>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    
+-->
