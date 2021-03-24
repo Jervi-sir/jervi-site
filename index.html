@@ -6,10 +6,19 @@
     <title>Jervi</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/parallax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 </head>
 
 <body>
-
+    <header>
+        <div class="triangle left">
+            <h1>JERVI</h1>
+        </div>
+        <div class="triangle right">
+            <h1>JERVI</h1>
+        </div>
+        <button class="unlock-button">Unlock</button>
+    </header>
     <div class="container">
 
         <ul id="scene">
@@ -91,6 +100,7 @@
                         <span>React</span>
                         <span>JS</span>
                         <span>PHP</span>
+                        <span>SQL</span>
                         <span>HTML/CSS/ES5</span>
                         <span>Figma</span>
                         <span>Arduino</span>
@@ -212,6 +222,19 @@
 
 
         }
+    </script>
+
+    <script>
+        // when clicking + or ☰ button
+        $("button").click(function() {
+            $("header").addClass("open");
+            $(".unlock-button")
+                .delay(700)
+                .queue(function() {
+                    $(".unlock-button").addClass("none");
+                    $("header").addClass("none");
+                });
+        });
     </script>
 </body>
 
