@@ -21,6 +21,76 @@ body {
     overflow: hidden;
 }
 
+#jervi.jervi-frames {
+    animation-name: jerviAnimation;
+    animation-duration: 1s;
+    transition: 1s;
+}
+
+@keyframes jerviAnimation {
+    16.66% {
+        background-image: url(/img/jervi6.png);
+    }
+    33.33% {
+        background-image: url(/img/jervi5.png);
+    }
+    50% {
+        background-image: url(/img/jervi4.png);
+    }
+    66.66% {
+        background-image: url(/img/jervi3.png);
+    }
+    83.33% {
+        background-image: url(/img/jervi2.png);
+    }
+    100% {
+        background-image: url(/img/jervi1.png);
+    }
+}
+
+#jervi {
+    transform: translate(-40px, 60px);
+}
+
+h2.animated-h2 {
+    animation-name: h2Animation;
+    animation-duration: 1s;
+    transition: 1.5s;
+}
+
+@keyframes h2Animation {
+    0% {
+        font-size: 0;
+        transform: translate(0, -37rem);
+    }
+    50% {
+        font-size: 0;
+        transform: translate(0, -37rem);
+    }
+    100% {
+        font-size: 1.5em;
+        transform: translate(0, 0);
+    }
+}
+
+.menu.animation-menu {
+    animation-name: menuAnimation;
+    animation-duration: 1s;
+    transition: 1s;
+}
+
+@keyframes menuAnimation {
+    0% {
+        transform: translate(0, -6rem);
+    }
+    50% {
+        transform: translate(0, -6rem);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 header {
     position: fixed;
     width: 100%;

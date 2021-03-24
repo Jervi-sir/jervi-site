@@ -17,13 +17,13 @@
         <div class="triangle right">
             <h1>JERVI</h1>
         </div>
-        <button class="unlock-button">Unlock</button>
+        <button class="unlock-button" onclick="startAnimation()">Unlock</button>
     </header>
     <div class="container">
 
         <ul id="scene">
-            <li class="layer" data-depth="0.1">
-                <img src="./img/jervi.png">
+            <li class="layer" data-depth="0.5">
+                <img src="/img/jervi6.png" id="jervi">
             </li>
         </ul>
         <div class="main">
@@ -143,7 +143,7 @@
                 <span class="close">&nbsp;</span>
                 <div class="image">
                     <h6>So you are interested</h6>
-                    <img src="./img/jervimoto.png" width="100%">
+                    <img src="./img/IMG_0052_1_1-min.gif" width="100%">
                 </div>
             </div>
             <div class="modal-body">
@@ -179,6 +179,44 @@
         </div>
 
     </div>
+
+    <script>
+        function startAnimation() {
+            var jervi = document.getElementById("jervi");
+            var h2 = document.getElementsByTagName("h2");
+            var h2_length = h2.length;
+            var menu = document.getElementsByClassName("menu")[0];
+
+            setTimeout(() => {
+                jervi.classList.add("jervi-frames");
+                setTimeout(() => {
+                    jervi.src = "/img/jervi5.png";
+                    setTimeout(() => {
+                        jervi.src = "/img/jervi4.png";
+                        setTimeout(() => {
+                            jervi.src = "/img/jervi3.png";
+                            setTimeout(() => {
+                                jervi.src = "/img/jervi2.png";
+                                setTimeout(() => {
+                                    jervi.src = "/img/jervi1.png";
+
+                                }, 166);
+                            }, 166);
+                        }, 166);
+                    }, 166);
+                }, 166);
+            }, 0);
+
+
+            for (var i = 0; i < h2_length; i++) {
+                h2[i].className = h2[i].className + " animated-h2";
+            }
+            menu.classList.add("animation-menu");
+
+
+        }
+    </script>
+
 
     <script>
         var scene = document.getElementById('scene');
