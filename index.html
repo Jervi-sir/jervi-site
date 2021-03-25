@@ -18,7 +18,10 @@
         <div class="triangle right">
             <h1>JERVI</h1>
         </div>
-        <button class="unlock-button" onclick="startAnimation()">Unlock</button>
+        <button class="unlock-button" onclick="animateBehindPage()" disabled>
+            <span class="text">UNLOCK</span>
+            <span class="progress">&nbsp;</span> 
+        </button>
     </header>
     <div class="container">
 
@@ -190,7 +193,7 @@
     </div>
 
     <script>
-        function startAnimation() {
+        function animateBehindPage() {
             var jervi = document.getElementById("jervi");
             var h2 = document.getElementsByTagName("h2");
             var h2_length = h2.length;
@@ -272,6 +275,10 @@
     </script>
 
     <script>
+        setInterval(function() {
+            $(".unlock-button").attr("disabled", false);
+        }, 2500);
+
         // when clicking + or ☰ button
         $("button").click(function() {
             $("header").addClass("open");
