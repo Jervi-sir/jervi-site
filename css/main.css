@@ -615,7 +615,7 @@ input[type=submit]:hover {
     margin: 0;
     font-weight: lighter;
     letter-spacing: 2px;
-    color: rgba(255, 248, 220, 0.226);
+    color: rgba(255, 204, 0);
 }
 
 .check-box-group {
