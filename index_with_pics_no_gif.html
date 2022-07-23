@@ -3,8 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Jervi</title>
     <link rel="icon" href="/img/head.png">
     <link rel="stylesheet" href="./css/main.css">
@@ -26,9 +24,18 @@
         </button>
     </header>
     <div class="container">
+
         <ul id="scene">
             <li class="layer" data-depth="0.5">
-                <img src="jervi.gif"" id="jervi">
+                <img src="/img/jervi6.png" id="jervi">
+
+                <!-- Just to call picture during load cuz js do just when its been called-->
+                <img src="/img/jervi1.png" style="display: none;">
+                <img src="/img/jervi2.png" style="display: none;">
+                <img src="/img/jervi3.png" style="display: none;">
+                <img src="/img/jervi4.png" style="display: none;">
+                <img src="/img/jervi5.png" style="display: none;">
+
             </li>
         </ul>
         <div class="main">
@@ -39,6 +46,8 @@
 
                 <ul class="menu">
                     <li class="item btn" id="m1" onclick="man(this.id)">Home</li>
+                    <li class="item btn">Home</li>
+                    <li class="item btn">Home</li>
                     <li class="item cybr">
                         <button class="cybr-btn">
                             About_me<span aria-hidden>_</span>
@@ -63,7 +72,7 @@
                 </div>
             </div>
             <div class="bus">
-                <marquee scrollamount="4" onMouseOver="this.stop()" onMouseOut="this.start()">
+                <marquee scrollamount="4">
                     <div class="area">
                         <img class="bus-img" src="./img/bus.svg" height="100%">
                         <ul>
@@ -187,7 +196,37 @@
     <script>
         function animateBehindPage() {
             var jervi = document.getElementById("jervi");
-            jervi.src = "jervi.gif"
+            var h2 = document.getElementsByTagName("h2");
+            var h2_length = h2.length;
+            var menu = document.getElementsByClassName("menu")[0];
+
+            setTimeout(() => {
+                jervi.classList.add("jervi-frames");
+                setTimeout(() => {
+                    jervi.src = "/img/jervi5.png";
+                    setTimeout(() => {
+                        jervi.src = "/img/jervi4.png";
+                        setTimeout(() => {
+                            jervi.src = "/img/jervi3.png";
+                            setTimeout(() => {
+                                jervi.src = "/img/jervi2.png";
+                                setTimeout(() => {
+                                    jervi.src = "/img/jervi1.png";
+
+                                }, 166);
+                            }, 166);
+                        }, 166);
+                    }, 166);
+                }, 166);
+            }, 0);
+
+
+            for (var i = 0; i < h2_length; i++) {
+                h2[i].className = h2[i].className + " animated-h2";
+            }
+            menu.classList.add("animation-menu");
+
+
         }
     </script>
 

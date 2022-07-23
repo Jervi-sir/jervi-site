@@ -495,6 +495,13 @@ button.none {
     padding-right: 10px;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
 .close {
     color: rgb(255, 255, 255);
     float: right;
@@ -862,3 +869,6 @@ input[type=submit]:hover {
         clip-path: var(--clip-four);
     }
 }
+
+
+
