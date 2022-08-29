@@ -1,0 +1,64 @@
+.bus-rails {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55%;
+}
+
+.bus .bus-img {
+  height: 80px;
+}
+
+.area {
+  position: relative;
+}
+.area ul {
+  position: absolute;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 10px;
+  left: 75px;
+}
+.area ul li {
+  height: 50px;
+  margin-right: 10px;
+}
+.area ul li img {
+  width: 40px;
+}
+.area ul li img:hover {
+  background: rgb(112, 112, 112);
+  border-radius: 6rem;
+  transition: 0.3s;
+}
+
+.area {
+  display: flex;
+}
+
+.table {
+  background: #C81642;
+  display: flex;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  height: 4vh;
+  background: repeating-radial-gradient(circle, #C81642, #C81642 7px, rgba(0, 0, 0, 0) 7px, rgba(0, 0, 0, 0) 14px);
+}
+.table .left {
+  background: #71E2A6;
+  text-align: center;
+  width: 20vw;
+}
+.table .right {
+  background: #C81642;
+  width: 100%;
+  /*box-shadow: inset 1px -4px 0px #5d303b85, inset 0px 4px 0px #5d303b85;*/
+  border-top: 1px solid tomato;
+  border-bottom: 1px solid tomato;
+  border-right: 2px solid tomato;
+}
+.table .right p {
+  margin: 0;
+}/*# sourceMappingURL=bus.css.map */

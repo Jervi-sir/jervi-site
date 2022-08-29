@@ -1,0 +1,88 @@
+@media only screen and (max-width: 600px) {
+body {
+    font-size: 5vmin;
+}
+
+.container {
+    position: relative;
+}
+
+.main {
+    height: 100vh;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: unset;
+    .logo {
+        width: 5rem;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.body {
+    top: 20%;
+    .right {
+        display: none;
+    }
+    .left {
+        flex-direction: column-reverse;
+    }
+}
+
+.bus-rails {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    .bus {
+        height: unset;
+    }
+}
+
+.menu {
+    display: none;
+}
+
+.table {
+    .left {
+        width: 8rem;
+    }
+    .right {
+        font-size: 15px;
+    }
+}
+
+.footer {
+    height: unset;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .left, .right {
+        display: none;
+    }
+}
+
+
+.footer {
+    height: 32vh;
+    justify-content: center;
+}
+
+
+.contact-me {
+    width: unset;
+    button {
+        padding: 0em 1em 0em 1em;
+    }
+}
+
+.modal-content {
+    width: 100%;
+}
+}
