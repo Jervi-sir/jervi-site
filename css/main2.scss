@@ -21,12 +21,12 @@ body {
     overflow: hidden;
 }
 
+/*
 #jervi.jervi-frames {
     animation-name: jerviAnimation;
     animation-duration: 1s;
     transition: 1s;
 }
-
 @keyframes jerviAnimation {
     16.66% {
         background-image: url(/img/jervi6.png);
@@ -47,6 +47,7 @@ body {
         background-image: url(/img/jervi1.png);
     }
 }
+*/
 
 #jervi {
     transform: translate(-40px, 60px);

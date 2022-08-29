@@ -21,55 +21,33 @@ body {
   overflow: hidden;
 }
 
+/*
 #jervi.jervi-frames {
-  -webkit-animation-name: jerviAnimation;
-          animation-name: jerviAnimation;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  transition: 1s;
+    animation-name: jerviAnimation;
+    animation-duration: 1s;
+    transition: 1s;
 }
-
-@-webkit-keyframes jerviAnimation {
-  16.66% {
-    background-image: url(/img/jervi6.png);
-  }
-  33.33% {
-    background-image: url(/img/jervi5.png);
-  }
-  50% {
-    background-image: url(/img/jervi4.png);
-  }
-  66.66% {
-    background-image: url(/img/jervi3.png);
-  }
-  83.33% {
-    background-image: url(/img/jervi2.png);
-  }
-  100% {
-    background-image: url(/img/jervi1.png);
-  }
-}
-
 @keyframes jerviAnimation {
-  16.66% {
-    background-image: url(/img/jervi6.png);
-  }
-  33.33% {
-    background-image: url(/img/jervi5.png);
-  }
-  50% {
-    background-image: url(/img/jervi4.png);
-  }
-  66.66% {
-    background-image: url(/img/jervi3.png);
-  }
-  83.33% {
-    background-image: url(/img/jervi2.png);
-  }
-  100% {
-    background-image: url(/img/jervi1.png);
-  }
+    16.66% {
+        background-image: url(/img/jervi6.png);
+    }
+    33.33% {
+        background-image: url(/img/jervi5.png);
+    }
+    50% {
+        background-image: url(/img/jervi4.png);
+    }
+    66.66% {
+        background-image: url(/img/jervi3.png);
+    }
+    83.33% {
+        background-image: url(/img/jervi2.png);
+    }
+    100% {
+        background-image: url(/img/jervi1.png);
+    }
 }
+*/
 #jervi {
   transform: translate(-40px, 60px);
   width: 70%;

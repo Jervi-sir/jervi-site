@@ -30,14 +30,14 @@
 
         <ul id="scene">
             <li class="layer" data-depth="0.5">
-                <img src="/img/jervi6.png" id="jervi">
-
+                <img src="/img/jervi6.png" id="jervi" alt=""/>
+                
                 <!-- Just to call picture during load cuz js do just when its been called-->
-                <img src="/img/jervi1.png" style="display: none;">
-                <img src="/img/jervi2.png" style="display: none;">
-                <img src="/img/jervi3.png" style="display: none;">
-                <img src="/img/jervi4.png" style="display: none;">
-                <img src="/img/jervi5.png" style="display: none;">
+                <img src="/img/jervi1.png" style="display: none;" alt=""/>
+                <img src="/img/jervi2.png" style="display: none;" alt=""/>
+                <img src="/img/jervi3.png" style="display: none;" alt=""/>
+                <img src="/img/jervi4.png" style="display: none;" alt=""/>
+                <img src="/img/jervi5.png" style="display: none;" alt=""/>
 
             </li>
         </ul>
@@ -205,6 +205,10 @@
             var h2_length = h2.length;
             var menu = document.getElementsByClassName("menu")[0];
 
+            for (var i = 0; i < h2_length; i++) {
+                h2[i].className = h2[i].className + " animated-h2";
+            }
+            menu.classList.add("animation-menu");
             setTimeout(() => {
                 jervi.classList.add("jervi-frames");
                 setTimeout(() => {
@@ -226,10 +230,6 @@
             }, 0);
 
 
-            for (var i = 0; i < h2_length; i++) {
-                h2[i].className = h2[i].className + " animated-h2";
-            }
-            menu.classList.add("animation-menu");
 
 
         }
