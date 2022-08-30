@@ -30,14 +30,9 @@
 
         <ul id="scene">
             <li class="layer" data-depth="0.5">
-                <img src="/img/jervi6.png" id="jervi" alt=""/>
+                <img src="/img/jervi-opener.gif" id="jervi" alt=""/>
                 
                 <!-- Just to call picture during load cuz js do just when its been called-->
-                <img src="/img/jervi1.png" style="display: none;" alt=""/>
-                <img src="/img/jervi2.png" style="display: none;" alt=""/>
-                <img src="/img/jervi3.png" style="display: none;" alt=""/>
-                <img src="/img/jervi4.png" style="display: none;" alt=""/>
-                <img src="/img/jervi5.png" style="display: none;" alt=""/>
 
             </li>
         </ul>
@@ -212,20 +207,7 @@
             setTimeout(() => {
                 jervi.classList.add("jervi-frames");
                 setTimeout(() => {
-                    jervi.src = "/img/jervi5.png";
-                    setTimeout(() => {
-                        jervi.src = "/img/jervi4.png";
-                        setTimeout(() => {
-                            jervi.src = "/img/jervi3.png";
-                            setTimeout(() => {
-                                jervi.src = "/img/jervi2.png";
-                                setTimeout(() => {
-                                    jervi.src = "/img/jervi1.png";
-
-                                }, 166);
-                            }, 166);
-                        }, 166);
-                    }, 166);
+                    jervi.src = "/img/jervi-opener.gif";
                 }, 166);
             }, 0);
 
